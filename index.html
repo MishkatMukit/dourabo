@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dourabo</title>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/481fde1f12.js" crossorigin="anonymous"></script>
+
+</head>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: '#6366F1',
+                    secondary: '#D74432',
+                }
+            }
+        }
+    }
+</script>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .container {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+
+    .font-inter {
+        font-family: "Inter", sans-serif;
+    }
+</style>
+
+<body class="text-[#1c1c1c] font-inter">
+    <header class="bg-slate-50s sticky z-10 top-0 bg-white p-2 shadow-lg shadow-[#1c1c1c10]">
+
+
+        <div class="container flex justify-between bg-base-100 ">
+            <div class="flex navbar p-3  items-center justify-between">
+                
+                <img class=" h-10" src="assets/logo1-01.png" alt="">
+                <div class="dropdown dropdown-end relative">
+                    <div tabindex="0" role="button" class=" lg:hidden">
+                        <i class="fa-solid fa-bars text-2xl text-primary"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu absolute -right-12 menu-lg dropdown-content text-right text-lg bg-base-100  z-1 mt-3   p-5  shadow">
+                        <a class="hover:text-primary" href="#home">
+                            <li>Home</li>
+                        </a>
+                        <a class="hover:text-primary" href="#products">
+                            <li>Products</li>
+                        </a>
+                        <a class="hover:text-primary" href="#reviews">
+                            <li>Review</li>
+                        </a>
+                        <a class="hover:text-primary" href="#contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="flex gap-6 font-semibold text-lg">
+                        <a class="hover:text-primary" href="#home">
+                            <li>Home</li>
+                        </a>
+                        <a class="hover:text-primary" href="#products">
+                            <li>Products</li>
+                        </a>
+                        <a class="hover:text-primary" href="#reviews">
+                            <li>Review</li>
+                        </a>
+                        <a class="hover:text-primary" href="#contact">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+            </div>
+        </div>
+        
+    </header>
+    <main class="">
+        <!-- hero -->
+        <section id="home" class="">
+            <div class="hero  md:py-28 bg-gradient-to-l from-[#6366F140] to-white">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <img class="md:w-[400px] lg:w-[500px]" src="assets/cover-shoe.png" class="max-w-sm rounded-lg " />
+                    <div>
+                        <h1
+                            class="text-7xl py-2 font-bold bg-gradient-to-r from-[#6366F1] to-[#D74432] bg-clip-text text-transparent">
+                            Step Into Style</h1>
+                        <p class="py-6 text-[#1c1c1c95] text-lg">
+                            Discover where performance meets fashion. Our curated collection of running shoes combines
+                            cutting-edge technology with head-turning designs that take you from morning miles to city
+                            streets. Whether you're chasing personal records or making a statement, find the perfect
+                            pair
+                            that moves as bold as you do. Elevate your run, elevate your style.
+                        </p>
+                        <a href="#products"><button class="btn bg-[#D74432] text-white ">Shop Now</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- products  -->
+        <section id="products" class="container py-20">
+            <div class="p-5">
+                <h1 class="font-extrabold text-5xl text-center text-primary ">OUR PRODUCTS</h1>
+                <p class="text-[#1c1c1c90] text-lg text-center p-2">Check out our all new collection to elevate your
+                    running experience to the next level</p>
+            </div>
+            <!-- product container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center my-10">
+                <!-- product - 1 -->
+                <div
+                    class="bg-gray-50 rounded-lg overflow-hidden max-w-[350px] shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="assets/rsz_shoe1.jpg" alt="Running Shoes" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">AquaStrike Pro</h3>
+                        <p class="text-gray-600 mb-4 flex-1">This brilliant blue running shoe features an engineered
+                            mesh upper with textured wave patterns. </p>
+                        <div class="flex items-center justify-between ">
+                            <span class="text-[#D74432] font-bold text-lg">$120</span>
+                            <button
+                                class="bg-primary font-semibold text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-gray-50 rounded-lg overflow-hidden max-w-[350px] shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="assets/rsz_shoe2.jpg" alt="Running Shoes" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">NightSky Performance</h3>
+                        <p class="text-gray-600 mb-4 flex-1">Advanced wave plate technology embedded in the midsole
+                            delivers smooth transitions and energy return.</p>
+                        <div class="flex items-center justify-between ">
+                            <span class="text-[#D74432] font-bold text-lg">$179</span>
+                            <button
+                                class="bg-primary font-semibold text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-gray-50 rounded-lg overflow-hidden max-w-[350px] shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="assets/rsz_shoe3.jpg" alt="Running Shoes" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">RetroFlow Classic</h3>
+                        <p class="text-gray-600 mb-4 flex-1">Vintage-inspired silhouette with modern foam technology
+                            delivers nostalgic style without sacrificing performance.</p>
+                        <div class="flex items-center justify-between ">
+                            <span class="text-[#D74432] font-bold text-lg">$267</span>
+                            <button
+                                class="bg-primary font-semibold text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-gray-50 rounded-lg overflow-hidden max-w-[350px] shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="assets/rsz_shoe4.jpg" alt="Running Shoes" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">FusionPulse Neon</h3>
+                        <p class="text-gray-600 mb-4 flex-1">Reflective details integrated throughout the perforated
+                            upper enhance visibility during low-light runs.</p>
+                        <div class="flex items-center justify-between ">
+                            <span class="text-[#D74432] font-bold text-lg">$130</span>
+                            <button
+                                class="bg-primary font-semibold text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-gray-50 rounded-lg overflow-hidden max-w-[350px] shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="assets/rsz_shoe5.jpg" alt="Running Shoes" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">LimeBreeze Runner</h3>
+                        <p class="text-gray-600 mb-4 flex-1">Ultra-lightweight mesh construction with breathable knit
+                            upper keeps feet cool during summer runs.</p>
+                        <div class="flex items-center justify-between ">
+                            <span class="text-[#D74432] font-bold text-lg">$199</span>
+                            <button
+                                class="bg-primary font-semibold text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-gray-50 rounded-lg overflow-hidden max-w-[350px] shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="assets/rsz_shoe6.jpg" alt="Running Shoes" class="w-full h-64 object-cover">
+                    <div class="p-6 flex flex-col">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">TrailBlaze Terrain</h3>
+                        <p class="text-gray-600 mb-4 flex-2">This navy and beige trail running shoe features aggressive
+                            rubber lugs with a distinctive orange outsole.</p>
+                        <div class="flex items-center justify-between ">
+                            <span class="text-[#D74432] font-bold text-lg">$211</span>
+                            <button
+                                class="bg-primary font-semibold text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <button
+                    class="transition duration-300 transform hover:shadow-sm hover:-translate-y-1 btn btn-lg bg-[#D74432] text-white text-lg">View
+                    All Products</button>
+            </div>
+        </section>
+        <!-- review section -->
+        <section id="reviews" class="bg-gradient-to-r from-[#6366F140] to-[white] py-12 ">
+            <div class="container">
+                <div class="p-5">
+                    <h1 class="font-extrabold text-5xl text-center text-primary mt-10 ">OUR CUSTOMER SAYS</h1>
+                    <p class="text-[#1c1c1c90] text-lg text-center p-2">Check out our customer reviews to build your
+                        trust</p>
+                </div>
+                <!-- review container -->
+                <div class="grid grid-cols-1 gap-4 justify-items-center">
+
+
+                    <div class=" flex flex-col bg-white filter p-6 rounded-lg shadow-lg max-w-screen-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="http://static.photos/people/200x200/149" alt="Customer"
+                                class="w-12 h-12 rounded-full mr-4 object-cover">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Sarah Johnson</h4>
+                                <div class="flex text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"The LimeBreeze Runner are the most comfortable shoes I've ever worn.
+                            I've already logged 100 miles in them and they still feel great!"</p>
+                    </div>
+                    <div class="bg-white filter p-6 rounded-lg shadow-lg max-w-screen-lg flex flex-col">
+                        <div class="flex items-center mb-4">
+                            <img src="http://static.photos/people/200x200/100" alt="Customer"
+                                class="w-12 h-12 rounded-full mr-4 object-cover">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Michael Chen</h4>
+                                <div class="flex text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"Been testing these TrailBlaze Terrains for the past 6 weeks on
+                            everything from muddy forest paths to technical rocky descents. The orange outsole lugs are
+                            absolute game-changers"</p>
+                    </div>
+                    <div class=" flex flex-col bg-white filter p-6 rounded-lg shadow-lg max-w-screen-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="http://static.photos/people/200x200/200" alt="Customer"
+                                class="w-12 h-12 rounded-full mr-4 object-cover">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Mike Andrew</h4>
+                                <div class="flex text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600">"Absolutely love these AquaStrike Pros! The bright blue color is even
+                            more stunning in person and gets compliments on every run. I've put about 200 miles on them
+                            over 3 months and they still feel incredibly responsive."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
